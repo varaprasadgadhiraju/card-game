@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Black Jack Card Game</title>
+    <link rel="stylesheet" href="card.css">
+  </head>
+  <body>
+    
+     <div id="table">
+         
+         <div id="deck">
+          <div class="back"></div>
+         </div>
+         <div id="status" >Press Deal to start game</div><br>
+         <div id="player-score" class="score">Your score: <span>0</span></div>
+         <div id="dealer-score" class="score">Dealer score: <span>0</span></div>
+         <div id="player-coins" class="score">Your coins: <span>0</span></div>
+         
+         <div class="container" id="dealer">
+         </div>
+  
+         <div class="border-line"></div>
+  
+         <div class="container" id="player">
+         </div>
+  
+         <div id="panel">
+          
+          <button id="deal" class="blue" type="button">DEAL</button>
+          <button id="hit" class="green" type="button" disabled>HIT</button>
+          <button id="stand" class="red" type="button" disabled>STAND</button>
+          <button id="reset" class="Black" type="button">RESET</button>
+          <button id="bet" class="yellow" type="button">BET 100 COINS</button>
+  
+        </div>
+      </div>
+
+    <script type="text/javascript" src="cards.js"></script>
+    <script type="text/javascript">
+      //initialise the game
+      BlackjackJS.init();
+    </script>
+  </body>
+</html>
